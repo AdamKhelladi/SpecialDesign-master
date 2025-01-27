@@ -2,7 +2,7 @@
 == Skills needed for the project ==
 ===================================
 
-- Html, Html5
+- HTML, HTML5
 - Css, Css3
 - JavaScript + ES6 + DOM
 - jQuery
