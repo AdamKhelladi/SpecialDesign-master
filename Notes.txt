@@ -3,7 +3,7 @@
 ===================================
 
 - HTML, HTML5
-- Css, Css3
+- CSS, CSS3
 - JavaScript + ES6 + DOM
 - jQuery
 
