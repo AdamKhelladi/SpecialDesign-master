@@ -4,12 +4,12 @@
 
 - HTML, HTML5
 - CSS, CSS3
-- JavaScript + ES6 + DOM + BOM
+- JavaScript + ES6 + DOM 
 - jQuery
 
-=============
-=== Notes ===
-=============
+===============
+==== Notes ====
+===============
 
 - No Framework 
 - Vanilla JavaScript
