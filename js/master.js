@@ -7,22 +7,16 @@ if (mainColors !== null) {
   // console.log(localStorage.getItem("color_option"));
 
   document.documentElement.style.setProperty('--main-color', mainColors);
-
-  // Remove Active Class From All Colors List Item
+  
   document.querySelectorAll(".colors-list li").forEach(element => {
-
     element.classList.remove("active");
-
     // Add Active Class On Element With Data-Color === Local Storage Item
     if (element.dataset.color === mainColors) {
 
       // Add Active Class
       element.classList.add("active");
-
     }
-
   });
-
 }
 
 // Random Background Option
