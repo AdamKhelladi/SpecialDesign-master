@@ -19,39 +19,22 @@ if (mainColors !== null) {
   });
 }
 
-// Random Background Option
 let backgroundOption = true;
-
-// Variable To Control The Background Interval
 let backgroundInterval;
-
-// Check If There's Local Storage Random Background Item
 let backgroundLocalItem = localStorage.getItem("background_option");
 
-// Check If Random Background Local Storage Is Not EMpty
 if (backgroundLocalItem !== null) {
-
-  // Remove Active Class From All Spans
   document.querySelectorAll(".random-backgrounds span").forEach(element => {
-
     element.classList.remove("active");
-
   });
 
   if (backgroundLocalItem === 'true') {
-
     backgroundOption = true;
-
     document.querySelector(".random-backgrounds .yes").classList.add("active");
-
   } else {
-
     backgroundOption = false;
-
     document.querySelector(".random-backgrounds .no").classList.add("active");
-
   }
-
 }
 
 // Click On Toggle Settings Gear
