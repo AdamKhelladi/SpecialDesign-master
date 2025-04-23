@@ -3,7 +3,6 @@ let mainColors = localStorage.getItem("color_option");
 
 // If There's Color Item In Local Storage
 if (mainColors !== null) {
-
   // console.log('Local Storage Is Not Empty You Can Set It On Root Now');
   // console.log(localStorage.getItem("color_option"));
 
