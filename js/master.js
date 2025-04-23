@@ -39,13 +39,10 @@ if (backgroundLocalItem !== null) {
 
 // Click On Toggle Settings Gear
 document.querySelector(".toggle-settings .fa-gear").onclick = function () {
-
   // Toggle Class Fa-spin For Rotation on Self
   this.classList.toggle("fa-spin");
-
   // Toggle Class Open On Main Settings Box
   document.querySelector(".settings-box").classList.toggle("open");
-  
 };
 
 // Switch Colors
@@ -53,7 +50,6 @@ const colorsLi = document.querySelectorAll(".colors-list li");
 
 // Loop On All List Items
 colorsLi.forEach(li => {
-
   // Click On Every List Items
   li.addEventListener("click", (e) => {
 
@@ -62,11 +58,8 @@ colorsLi.forEach(li => {
 
     // Set Color On Local Storage
     localStorage.setItem("color_option", e.target.dataset.color);
-
     handleActive(e);
-
   });
-
 });
 
 // Switch Random Background Option
@@ -77,29 +70,18 @@ randomBackEl.forEach(span => {
 
   // Click On Every Span
   span.addEventListener("click", (e) => {
-
     handleActive(e);
 
     if (e.target.dataset.background === 'yes') {
-
       backgroundOption = true;
-
       randomizeImgs();
-
       localStorage.setItem("background_option", true);
-
     } else {
-
       backgroundOption = false;
-
       clearInterval(backgroundInterval);
-
       localStorage.setItem("background_option", false);
-
     }
-
   });
-
 });
 
 // Select Landing Page Element
